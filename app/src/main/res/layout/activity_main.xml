@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageSes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toTopOf="@+id/btnBaslat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnBaslat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Baslat"
+        app:layout_constraintEnd_toEndOf="@+id/imageSes"
+        app:layout_constraintStart_toStartOf="@+id/imageSes"
+        app:layout_constraintTop_toBottomOf="@+id/imageSes" />
+
+    <Button
+        android:id="@+id/btnDurdur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Durdur"
+        app:layout_constraintBottom_toTopOf="@+id/btnOynat"
+        app:layout_constraintEnd_toEndOf="@+id/btnBaslat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnBaslat"
+        app:layout_constraintTop_toBottomOf="@+id/btnBaslat" />
+
+    <Button
+        android:id="@+id/btnOynat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Oynat"
+        app:layout_constraintEnd_toEndOf="@+id/btnDurdur"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnDurdur"
+        app:layout_constraintTop_toBottomOf="@+id/btnDurdur" />
+</android.support.constraint.ConstraintLayout>
